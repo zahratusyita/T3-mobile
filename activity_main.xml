@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5DC"> <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Form Identitas Mahasiswa"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:background="#5D4037" android:padding="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="32dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Lengkap"
+            android:textColor="#6D4C41"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/etNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan nama..."
+            android:textColor="#3E2723"
+            android:backgroundTint="#5D4037"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin"
+            android:textColor="#6D4C41"
+            android:textStyle="bold" />
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rbLaki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laki-laki"
+                android:buttonTint="#5D4037"/>
+            <RadioButton
+                android:id="@+id/rbPerempuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perempuan"
+                android:buttonTint="#5D4037"
+                android:layout_marginStart="16dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hobi"
+            android:textColor="#6D4C41"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"/>
+        <CheckBox
+            android:id="@+id/cbMembaca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Membaca"
+            android:buttonTint="#5D4037"/>
+        <CheckBox
+            android:id="@+id/cbCoding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coding"
+            android:buttonTint="#5D4037"/>
+        <CheckBox
+            android:id="@+id/cbOlahraga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Olahraga"
+            android:buttonTint="#5D4037"/>
+
+        <Button
+            android:id="@+id/btnTampilkan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan Data"
+            android:backgroundTint="#5D4037"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:padding="20dp"
+        android:background="#5D4037"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        android:lineSpacingExtra="6dp"
+        android:hint="Hasil input akan muncul di sini..."
+        android:textColorHint="#D7CCC8" />
+
+</LinearLayout>
+</ScrollView>
